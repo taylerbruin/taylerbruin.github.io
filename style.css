@@ -1,6 +1,17 @@
+:root {
+	/* Change these variables according to your theme */
+	--primary: #ffffff;
+	--accent: #00c3ff93;
+	--delete: #b60000c0;
+	--primary-text: #ffffff;
+	--green: #2474a6af;
+	/* Window background and default font */
+	background-color: rgba(65, 64, 64, 0.562);
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 /* Dropdown Button */
 .dropdownbutton {
-    background-color: #04AA6D;
+    background-color: #2474a6af;
     color: white;
     padding: 16px;
     font-size: 16px;
@@ -38,4 +49,28 @@
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropdownbutton {background-color: #3e8e41;}
+.dropdown:hover .dropdownbutton {background-color: #1e628d4e;}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+}
+
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  main {
+    background: linear-gradient(to bottom right, rgb(32, 32, 32), rgb(152, 152, 152));
+    border-style: groove;
+    height: 100%;
+    max-width: 75%;
+    margin: 0 auto;
+    padding: 1rem;
+    border-radius: 5px;
+  }
