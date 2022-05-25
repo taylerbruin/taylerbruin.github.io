@@ -6,8 +6,19 @@
 	--primary-text: #ffffff;
 	--green: #2474a6af;
 	/* Window background and default font */
-	background-color: rgba(65, 64, 64, 0.562);
+	background: #052937;
+  background-size: 200%;
 	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+	max-width: 55rem;
+	/* Keeps the page from overflowing on wide monitors */
+	margin: 1em auto;
+	/* 0.5em is top and bottom margin. 'auto' for left and right centers the body on the page */
+	padding: 0.75rem;
+	/* Padding goes between the borders and the internal content */
+	background: -webkit-radial-gradient(center, rgb(0, 0, 0), #052937);
+	/* Contrast the body background from the page background */
 }
 /* Dropdown Button */
 .dropdownbutton {
@@ -66,11 +77,9 @@
     height: 100%;
   }
   main {
-    background: linear-gradient(to bottom right, rgb(32, 32, 32), rgb(152, 152, 152));
-    border-style: groove;
     height: 100%;
     max-width: 75%;
-    margin: 0 auto;
+    margin: 5em;
     padding: 1rem;
     border-radius: 5px;
   }
