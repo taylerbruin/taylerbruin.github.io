@@ -74,3 +74,9 @@
     padding: 1rem;
     border-radius: 5px;
   }
+  .heading {
+    position: relative;
+    left: auto;
+    display: block;
+    max-width: 75%;
+  }

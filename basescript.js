@@ -1,11 +1,13 @@
 function createheader(){
 
 return `
-<meta charset="uft-8" />
+<meta charset="uft-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="style.css">
 <title>Tayler Bruin</title>
-<a href="index.html">Home</a>
+<div id = "heading" class = "heading">
+<button onclick="location.href='index.html'" type="button">
+         Home</button>
 <nav>
     <div class="dropdown">
         <button class="dropdownbutton">Creative Projects</button>
@@ -21,6 +23,7 @@ return `
         </div>
     </div>
 </nav>
+</div>
 `
 }
 this.mainheader();
