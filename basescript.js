@@ -6,8 +6,8 @@ return `
 <link rel="stylesheet" href="style.css">
 <title>Tayler Bruin</title>
 <div id = "heading" class = "heading">
-<button onclick="location.href='index.html'" type="button">
-         Home</button>
+<button class="material-icons" onclick="location.href='index.html'" type="button">
+home</button>
 <nav>
     <div class="dropdown">
         <button class="dropdownbutton">Creative Projects</button>
