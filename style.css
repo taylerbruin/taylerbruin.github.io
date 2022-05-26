@@ -87,7 +87,7 @@ body {
 .dropdown:hover .dropdownbutton {
   background-color: #1e628d4e;
 }
-.home_button_material_icon{
+.home-button{
   color: white;
   border: none;
 	/* No border */
@@ -95,7 +95,7 @@ body {
 	/* Match the background of the parent */
 	font-family: 'Material Icons';
 	/* Use the icon font */
-	font-size: inherit;
+	font-size: 75px;
 	/* Input doesn't automatically inherit font size. This brings it in. */
 	cursor: pointer;
 	/* Change the cursor to a pointer when hovering on this element */
@@ -131,6 +131,8 @@ main {
 .heading {
   position: relative;
   left: auto;
-  display: block;
-  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr 5fr);
+  align-items: end;
+  grid-gap: 1em;
 }
