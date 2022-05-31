@@ -8,7 +8,7 @@ function createheader() {
     <div id="heading" class="heading">
         <button class="home-button material-icons" onclick="location.href='index.html'" type="button">
             home</button>
-        <nav>
+        <nav class = "navigation_bar">
             <div class="dropdown">
                 <button class="dropdownbutton">Creative Projects</button>
                 <div class="dropdown-content">

@@ -3,6 +3,7 @@ the corresponding fonts from Google Fonts. */
 
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
+
 :root {
   /* Change these variables according to your theme */
   --primary: #ffffff;
@@ -42,11 +43,17 @@ body {
 
 /* Dropdown Button */
 .dropdownbutton {
-  background-color: #2474a6af;
+  background-color: #2474a600;
   color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 
 .dropdown {
@@ -86,6 +93,9 @@ body {
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropdownbutton {
   background-color: #1e628d4e;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='7.41' height='12' viewBox='0 0 7.41 12'%3E%3Cpath d='M10,6,8.59,7.41,13.17,12,8.59,16.59,10,18l6-6Z' transform='translate(-8.59 -6)' fill='%23fff'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right center;
 }
 .home-button{
   color: white;
@@ -99,6 +109,7 @@ body {
 	/* Input doesn't automatically inherit font size. This brings it in. */
 	cursor: pointer;
 	/* Change the cursor to a pointer when hovering on this element */
+  
 }
 .video-container {
   position: relative;
@@ -132,7 +143,13 @@ main {
   position: relative;
   left: auto;
   display: grid;
-  grid-template-columns: repeat(2, 1fr 5fr);
+  grid-template-columns: max-content auto;
   align-items: end;
   grid-gap: 1em;
+ 
+}
+
+.navigation_bar{
+  display: grid;
+  grid-template-columns: max-content max-content;
 }
