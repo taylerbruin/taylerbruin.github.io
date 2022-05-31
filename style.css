@@ -92,8 +92,8 @@ body {
   background-color: #1e628d4e;
 }
 .dropdown:hover .down {
-  transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
 }
 .home-button{
   color: white;
@@ -159,6 +159,8 @@ main {
 }
 .arrow {
   border: solid rgb(255, 255, 255);
+  background-color: white;
+  clip-path: polygon(50% 10%, 0% 100%, 100% 100%);
   border-width: 0 5px 5px 0;
   display: inline-block;
   padding: 3px;
@@ -166,8 +168,8 @@ main {
   margin-bottom: 1px;
 }
 
-/* this makes the arrow point down*/
+/* this makes the triangle point down*/
 .down {
-  transform: rotate(45deg);
-  -webkit-transform: rotate(45deg);
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
 }
