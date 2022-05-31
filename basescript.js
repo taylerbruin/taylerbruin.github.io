@@ -10,14 +10,16 @@ function createheader() {
             home</button>
         <nav class = "navigation_bar">
             <div class="dropdown">
-                <button class="dropdownbutton">Creative Projects</button>
+            <div class ="button wrapper">
+                <button class="dropdownbutton">Creative Projects <i class="arrow down"></i> </button>
+                </div>
                 <div class="dropdown-content">
                     <a href="comms_taki.html">Taki</a>
                     <a href="byupromo.html">byupromo</a>
                 </div>
             </div>
             <div class="dropdown">
-                <button class="dropdownbutton">Technical Projects</button>
+                <button class="dropdownbutton">Technical Projects <i class="arrow down"></i> </button>
                 <div class="dropdown-content">
                     <a href="githubprojects.html">githubprojects</a>
                 </div>
