@@ -89,9 +89,6 @@ body {
 .dropdown:hover .dropdown-content {
   display: block;
 }
-.dropdown:not(:hover) .dropdown-content {
-  display: none;
-}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
 .dropdown:hover .dropdownbutton {
