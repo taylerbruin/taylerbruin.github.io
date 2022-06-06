@@ -12,9 +12,9 @@ the corresponding fonts from Google Fonts. */
   --primary-text: #ffffff;
   --green: #2474a6af;
   /* Window background and default font */
-  background: #052937;
+  background-image: url('background_image.jpg');
   background-size: 200%;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Tahoma', 'Verdana', 'Times New Roman', 'Lucida Sans';
 }
 
 body {
@@ -24,23 +24,10 @@ body {
   /* 0.5em is top and bottom margin. 'auto' for left and right centers the body on the page */
   padding: 1%;
   /* Padding goes between the borders and the internal content */
-  background: -webkit-radial-gradient(center, rgb(0, 0, 0), #052937);
+  background: rgba(0, 0, 0, 0.159);
   /* Contrast the body background from the page background */
 }
-@media only screen and (max-width: 600px) {
-  body{
-    max-width: 100%;
-    margin: 0%;
-    padding: 0%;
-  }
-  main{
-    max-width: 100%;
-    margin: 0%;
-    padding: 0%;
-  }
-  
-  
-}
+
 
 /* Dropdown Button */
 .dropdownbutton {
@@ -49,7 +36,6 @@ body {
   padding: 10px;
   font-size: 16px;
   border: none;
-  border-radius: 5px;
   position: relative;
   overflow: hidden;
 }
@@ -64,7 +50,6 @@ body {
   position: absolute;
   background-color: #f1f1f1;
   min-width: fit-content;
-  border-radius: 5px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
@@ -72,22 +57,21 @@ body {
 .dropdown-content-visible {
   display: block;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: #ffffffda;
   min-width: fit-content;
-  border-radius: 5px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.496);
   z-index: 1;
 }
 .dropdown-content-visible a {
-  color: black;
+  color: rgb(0, 0, 0);
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 /* Change color of dropdown links on hover */
 .dropdown-content-visible a:hover {
-  background-color: #ddd;
-  border-radius: 5px;
+  color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 /* Links inside the dropdown */
@@ -102,7 +86,6 @@ body {
 /* Change color of dropdown links on hover */
 .dropdown-content a:hover {
   background-color: #ddd;
-  border-radius: 5px;
 }
 
 /* Show the dropdown menu on hover */
@@ -168,6 +151,7 @@ main {
 .navigation_bar{
   display: grid;
   grid-template-columns: max-content max-content;
+  background-color: rgba(14, 76, 93, 0.627);
 }
 
 
@@ -190,4 +174,41 @@ main {
 .up {
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
+}
+.video_description_title{
+  background-color: rgba(14, 76, 93, 0.704);
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.video_description{
+  background-color: rgba(8, 44, 54, 0.721);
+  color: white;
+  padding-top: 1em;
+  padding-right: 15%;
+  padding-left: 5%;
+}
+footer {
+  padding: 2em
+}
+.credit_link{
+  color: white;
+  font-size: smaller;
+}
+@media only screen and (max-width: 600px) {
+  body{
+    max-width: 100%;
+    margin: 0%;
+    padding: 0%;
+  }
+  main{
+    max-width: 100%;
+    margin: 0%;
+    padding: 0%;
+  }
+  .video_description{
+    padding-top: 0em;
+    padding-right: 0%;
+    padding-left: 0%;
+    }
+  
 }

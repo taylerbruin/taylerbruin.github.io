@@ -1,3 +1,4 @@
+/* this returns the html header to be put at the top of every page */
 function createheader() {
 
     return `
@@ -34,16 +35,16 @@ function mainheader() {
 
 
 }
-let current_menu_id = 'dropdownmenu_technical';
-let current_arrow_id = 'displayarrow_technical';
-/*opens dropdown menu when you click on the button*/
+
+/*opens dropdown menu when you click on the button.
+This also toggles it when you click on the button again.
+Please note in the current build of the site it is a design choice
+to allow both menus to be open at once since they do not overlap.
+*/
 function toggle_dropdown(menu_id, arrow_id) {
         if (document.getElementById(menu_id).classList.contains("dropdown-content")) {
             document.getElementById(menu_id).className = "dropdown-content-visible";
             document.getElementById(arrow_id).className = "arrow up";
-            current_menu_id = menu_id;
-            current_arrow_id = arrow_id;
-
         }
         else if (document.getElementById(menu_id).classList.contains("dropdown-content-visible")) {
             document.getElementById(menu_id).className = "dropdown-content";
@@ -51,10 +52,10 @@ function toggle_dropdown(menu_id, arrow_id) {
         }
 }
 
-/* Close dropdown From Anywhere */
+/* Close both dropdowns From Anywhere */
 function closeSubmenu(e) {
     let isClickInside = heading.contains(e.target);
-    if (!isClickInside && document.getElementById(current_menu_id).classList.contains("dropdown-content-visible")) {
+    if (!isClickInside) {
         document.getElementById('dropdownmenu_technical').className = "dropdown-content";
         document.getElementById('displayarrow_technical').className = "arrow down";
         document.getElementById('dropdownmenu_creative').className = "dropdown-content";
