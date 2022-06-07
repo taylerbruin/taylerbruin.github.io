@@ -12,8 +12,9 @@ the corresponding fonts from Google Fonts. */
   --primary-text: #ffffff;
   --green: #2474a6af;
   /* Window background and default font */
-  background-image: url('background_image.jpg');
-  background-size: 200%;
+  background-image: url("background_image.webp");
+  background-repeat: inherit;
+  background-position: center;
   font-family: 'Tahoma', 'Verdana', 'Times New Roman', 'Lucida Sans';
 }
 
@@ -22,8 +23,10 @@ body {
   /* Keeps the page from overflowing on wide monitors */
   margin: 1em auto;
   /* 0.5em is top and bottom margin. 'auto' for left and right centers the body on the page */
-  padding: 1%;
+  padding: 0%;
   /* Padding goes between the borders and the internal content */
+  padding-left: 1%;
+  padding-top: 1%;
   background: rgba(0, 0, 0, 0.159);
   /* Contrast the body background from the page background */
 }
@@ -57,7 +60,7 @@ body {
 .dropdown-content-visible {
   display: block;
   position: absolute;
-  background-color: #ffffffda;
+  background-color: #ffffffeb;
   min-width: fit-content;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.496);
   z-index: 1;
@@ -71,7 +74,7 @@ body {
 /* Change color of dropdown links on hover */
 .dropdown-content-visible a:hover {
   color: black;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(225, 225, 225);
 }
 
 /* Links inside the dropdown */
@@ -151,7 +154,8 @@ main {
 .navigation_bar{
   display: grid;
   grid-template-columns: max-content max-content;
-  background-color: rgba(14, 76, 93, 0.627);
+  background-image: linear-gradient(to right, rgba(91, 91, 91, 0.627), rgba(14, 76, 93, 0));
+  
 }
 
 
@@ -176,12 +180,12 @@ main {
   -webkit-transform: rotate(0deg);
 }
 .video_description_title{
-  background-color: rgba(14, 76, 93, 0.704);
+  background-color: rgba(62, 62, 62, 0.704);
   color: rgb(255, 255, 255);
   font-size: 20px;
 }
 .video_description{
-  background-color: rgba(8, 44, 54, 0.721);
+  background-color: rgba(47, 47, 47, 0.721);
   color: white;
   padding-top: 1em;
   padding-right: 15%;
@@ -193,6 +197,15 @@ footer {
 .credit_link{
   color: white;
   font-size: smaller;
+}
+.resume_container{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-gap: 2em;
+}
+.work_experience{
+  display: grid;
+  
 }
 @media only screen and (max-width: 600px) {
   body{

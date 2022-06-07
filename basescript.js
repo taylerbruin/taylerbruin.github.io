@@ -14,13 +14,13 @@ function createheader() {
                     <button class="dropdownbutton" onclick="toggle_dropdown('dropdownmenu_creative' , 'displayarrow_creative')">Creative Projects <i id="displayarrow_creative"class="arrow down"></i> </button>
                     <div id="dropdownmenu_creative" class="dropdown-content">
                         <a href="comms_taki.html">Taki</a>
-                        <a href="byupromo.html">byupromo</a>
+                        <a href="byupromo.html">BYU Promo</a>
                     </div>
                 </div>
                 <div id="dropdown_button" class="dropdown">
                     <button class="dropdownbutton" onclick="toggle_dropdown('dropdownmenu_technical' , 'displayarrow_technical')">Technical Projects <i id="displayarrow_technical"class="arrow down"></i> </button>
                     <div id="dropdownmenu_technical" class="dropdown-content">
-                        <a href="githubprojects.html">githubprojects</a>
+                        <a href="githubprojects.html">GitHub Projects</a>
                     </div>
                 </div>
             </nav>
