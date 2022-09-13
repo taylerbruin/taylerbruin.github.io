@@ -7,9 +7,10 @@ function createheader() {
         <link rel="stylesheet" href="style.css">
         <title>Tayler Bruin</title>
         <div id="heading" class="heading">
-            <button class="home-button material-icons" onclick="location.href='index.html'" type="button">
-                home</button>
-            <nav id="nav_bar" class = "navigation_bar">
+        <input type=image class=home_button src="Logo_Run_1.svg" alt="Home" onclick="location.href='index.html'">
+        <h1>Tayler Bruin - Portfolio</h1>
+        <br>
+        <nav id="nav_bar" class = "navigation_bar">
                 <div id="dropdown_button" class="dropdown">          
                     <button class="dropdownbutton" onclick="toggle_dropdown('dropdownmenu_creative' , 'displayarrow_creative')">Creative Projects <i id="displayarrow_creative"class="arrow down"></i> </button>
                     <div id="dropdownmenu_creative" class="dropdown-content">
