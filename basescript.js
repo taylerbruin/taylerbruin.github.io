@@ -27,15 +27,16 @@ function createheader() {
                 <div id="dropdown_button" class="dropdown">
                 <input type="button" class="dropdownbutton" onclick="location.href='resume.html'" value="Resume" />
                 </div>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
+                <div class="filler_nav_bar"></div>
             </nav>
+            </div>
 `
 }
 this.mainheader();
 
 function mainheader() {
     //creates base header for all pages.
+
     document.getElementById("top").innerHTML += createheader();
 
 

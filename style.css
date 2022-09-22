@@ -146,14 +146,14 @@ main {
   left: auto;
   display: grid;
   grid-template-columns: max-content auto;
-  align-items: end;
-  grid-gap: 0;
+  align-items: center;
+  grid-gap: 0px;
  
 }
 
 .navigation_bar{
   display: grid;
-  grid-template-columns: max-content max-content max-content;
+  grid-template-columns: max-content max-content max-content auto;
   background-image: linear-gradient(to right, rgba(91, 91, 91, 0.788), rgba(37, 141, 170, 0.575));
 }
 
@@ -226,8 +226,10 @@ h1{
   position: relative;
   overflow: hidden;
 }
-.icon {
-  display: none;
+.filler_nav_bar{
+  background-color: #2474a600;
+  width: 52vw;
+
 }
 @media only screen and (max-width: 600px) {
   body{
@@ -249,5 +251,15 @@ h1{
     padding-right: 0%;
     padding-left: 0%;
     }
-
+    .navigation_bar{
+      width: 100%;
+      text-align: center;
+      grid-template-columns: auto;
+      left: auto;
+    }
+    .filler_nav_bar{
+      background-color: #2474a600;
+      width: 100vw;
+    
+    }
 }
