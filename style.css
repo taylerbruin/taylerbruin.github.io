@@ -154,7 +154,7 @@ main {
 .navigation_bar{
   display: grid;
   grid-template-columns: max-content max-content;
-  background-image: linear-gradient(to right, rgba(91, 91, 91, 0.627), rgba(14, 76, 93, 0));
+  background-image: linear-gradient(to right, rgba(91, 91, 91, 0.788), rgba(37, 141, 170, 0.575));
 }
 
 
@@ -208,8 +208,9 @@ footer {
 }
 .home_button{
 
-  width: 75px;
+  width: 300px;
   cursor: pointer;
+  padding-bottom: 1em;
 
 }
 h1{

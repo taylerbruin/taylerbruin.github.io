@@ -7,8 +7,7 @@ function createheader() {
         <link rel="stylesheet" href="style.css">
         <title>Tayler Bruin</title>
         <div id="heading" class="heading">
-        <input type=image class=home_button src="Logo_Run_1.svg" alt="Home" onclick="location.href='index.html'">
-        <h1>Tayler Bruin - Portfolio</h1>
+        <input type=image class=home_button src="Logo_Run_2.svg" alt="Home" onclick="location.href='index.html'">
         <br>
         <nav id="nav_bar" class = "navigation_bar">
                 <div id="dropdown_button" class="dropdown">          
