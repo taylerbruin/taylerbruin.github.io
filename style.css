@@ -153,7 +153,7 @@ main {
 
 .navigation_bar{
   display: grid;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: max-content max-content max-content;
   background-image: linear-gradient(to right, rgba(91, 91, 91, 0.788), rgba(37, 141, 170, 0.575));
 }
 
@@ -217,6 +217,18 @@ h1{
   font-size: 30px;
   padding-left: 10px;
 }
+.download_button{
+  background-color: #008299;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  position: relative;
+  overflow: hidden;
+}
+.icon {
+  display: none;
+}
 @media only screen and (max-width: 600px) {
   body{
     max-width: 100%;
@@ -237,5 +249,5 @@ h1{
     padding-right: 0%;
     padding-left: 0%;
     }
-  
+
 }

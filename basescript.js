@@ -5,6 +5,7 @@ function createheader() {
     <meta charset="uft-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <title>Tayler Bruin</title>
         <div id="heading" class="heading">
         <input type=image class=home_button src="Logo_Run_2.svg" alt="Home" onclick="location.href='index.html'">
@@ -23,8 +24,12 @@ function createheader() {
                         <a href="githubprojects.html">GitHub Projects</a>
                     </div>
                 </div>
+                <div id="dropdown_button" class="dropdown">
+                <input type="button" class="dropdownbutton" onclick="location.href='resume.html'" value="Resume" />
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
             </nav>
-        </div>
 `
 }
 this.mainheader();
@@ -62,5 +67,7 @@ function closeSubmenu(e) {
         document.getElementById('displayarrow_creative').className = "arrow down";
     }
   }
+  /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+
   /* Event listener for closing dropdowns */
 document.addEventListener("click", closeSubmenu, false);
