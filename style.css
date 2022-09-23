@@ -5,261 +5,269 @@ the corresponding fonts from Google Fonts. */
 
 
 :root {
-  /* Change these variables according to your theme */
-  --primary: #ffffff;
-  --accent: #00c3ff93;
-  --delete: #b60000c0;
-  --primary-text: #ffffff;
-  --green: #2474a6af;
-  /* Window background and default font */
-  background-image: url("background_image.webp");
-  background-repeat: inherit;
-  background-position: center;
-  font-family: 'Tahoma', 'Verdana', 'Times New Roman', 'Lucida Sans';
+    /* Change these variables according to your theme */
+    --primary: #ffffff;
+    --accent: #00c3ff93;
+    --delete: #b60000c0;
+    --primary-text: #ffffff;
+    --green: #2474a6af;
+    /* Window background and default font */
+    background-image: url("background_image.webp");
+    background-repeat: inherit;
+    background-position: center;
+    font-family: 'Tahoma', 'Verdana', 'Times New Roman', 'Lucida Sans';
 }
 
 body {
-  max-width: 75%;
-  /* Keeps the page from overflowing on wide monitors */
-  margin: 1em auto;
-  /* 0.5em is top and bottom margin. 'auto' for left and right centers the body on the page */
-  padding: 0%;
-  /* Padding goes between the borders and the internal content */
-  padding-left: 1%;
-  padding-top: 1%;
-  background: rgba(0, 0, 0, 0.159);
-  /* Contrast the body background from the page background */
+    max-width: 75%;
+    /* Keeps the page from overflowing on wide monitors */
+    margin: 1em auto;
+    /* 0.5em is top and bottom margin. 'auto' for left and right centers the body on the page */
+    padding: 0%;
+    /* Padding goes between the borders and the internal content */
+    padding-left: 1%;
+    padding-top: 1%;
+    background: rgba(0, 0, 0, 0.159);
+    /* Contrast the body background from the page background */
 }
 
 
-/* Dropdown Button */
-.dropdownbutton {
-  background-color: #2474a600;
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  position: relative;
-  overflow: hidden;
+
+
+.topnav {
+    overflow: hidden;
+    height: max-content;
+    background-image: linear-gradient(to right, rgba(91, 91, 91, 0.788), rgba(37, 141, 170, 0.575));
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
 }
 
 .dropdown {
-  position: relative;
-  display: inline-block;
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown .dropbtn {
+    font-size: 17px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 14px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    height: max-content;
 }
 
 .dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: fit-content;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
 }
 
-.dropdown-content-visible {
-  display: block;
-  position: absolute;
-  background-color: #ffffffeb;
-  min-width: fit-content;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.496);
-  z-index: 1;
-}
-.dropdown-content-visible a {
-  color: rgb(0, 0, 0);
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-/* Change color of dropdown links on hover */
-.dropdown-content-visible a:hover {
-  color: black;
-  background-color: rgb(225, 225, 225);
-}
-
-/* Links inside the dropdown */
 .dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: #555;
+    color: white;
+}
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+    background-color: #ddd;
+    color: black;
 }
 
-/* Show the dropdown menu on hover */
-
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropdownbutton {
-  background-color: #1e628d4e;
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
-.home-button{
-  color: white;
-  border: none;
-	/* No border */
-	background: none;
-	/* Match the background of the parent */
-	font-family: 'Material Icons';
-	/* Use the icon font */
-	font-size: 50px;
-	/* Input doesn't automatically inherit font size. This brings it in. */
-	cursor: pointer;
-	/* Change the cursor to a pointer when hovering on this element */
-  
-}
+
+
 .video-container {
-  position: relative;
-  overflow: hidden;
-  padding-top: 56.25%;
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
 }
 
 .video_description {
-  color: white;
-  padding-bottom: 1em;
+    color: white;
+    padding-bottom: 1em;
 }
 
 .resp-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
 }
 
 main {
-  height: 100%;
-  max-width: 100%;
-  margin: 1%;
-  padding: 1rem;
-  border-radius: 5px;
-}
-
-.heading {
-  position: relative;
-  left: auto;
-  display: grid;
-  grid-template-columns: max-content auto;
-  align-items: center;
-  grid-gap: 0px;
- 
-}
-
-.navigation_bar{
-  display: grid;
-  grid-template-columns: max-content max-content max-content auto;
-  background-image: linear-gradient(to right, rgba(91, 91, 91, 0.788), rgba(37, 141, 170, 0.575));
+    height: 100%;
+    max-width: 100%;
+    margin: 1%;
+    padding: 1rem;
+    border-radius: 5px;
 }
 
 
-.arrow {
-  border: solid rgb(255, 255, 255);
-  background-color: white;
-  clip-path: polygon(50% 10%, 0% 100%, 100% 100%);
-  border-width: 0 5px 5px 0;
-  display: inline-block;
-  padding: 3px;
-  margin-left: 5px;
-  margin-bottom: 1px;
+
+
+
+
+
+.video_description_title {
+    background-color: rgba(62, 62, 62, 0.704);
+    color: rgb(255, 255, 255);
+    font-size: 20px;
 }
 
-/* this makes the triangle point down*/
-.down {
-  transform: rotate(180deg);
-  -webkit-transform: rotate(180deg);
+.video_description {
+    background-color: rgba(47, 47, 47, 0.721);
+    color: white;
+    padding-top: 1em;
+    padding-right: 15%;
+    padding-left: 5%;
 }
-.up {
-  transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-}
-.video_description_title{
-  background-color: rgba(62, 62, 62, 0.704);
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-}
-.video_description{
-  background-color: rgba(47, 47, 47, 0.721);
-  color: white;
-  padding-top: 1em;
-  padding-right: 15%;
-  padding-left: 5%;
-}
+
 footer {
-  padding: 2em
+    padding: 2em
 }
-.credit_link{
-  color: white;
-  font-size: smaller;
-}
-.resume_container{
-  display: grid;
-  grid-template-columns: max-content max-content;
-  grid-gap: 2em;
-}
-.work_experience{
-  display: grid;
-  
-}
-.home_button{
 
-  width: 300px;
-  cursor: pointer;
-  padding-bottom: 1em;
+.credit_link {
+    color: white;
+    font-size: smaller;
+}
+
+.resume_container {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    grid-gap: 2em;
+}
+
+.work_experience {
+    display: grid;
 
 }
-h1{
-  font-size: 30px;
-  padding-left: 10px;
+
+h1 {
+    font-size: 30px;
+    padding-left: 10px;
 }
-.download_button{
-  background-color: #008299;
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  position: relative;
-  overflow: hidden;
+
+.download_button {
+    background-color: #008299;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    position: relative;
+    overflow: hidden;
 }
-.filler_nav_bar{
-  background-color: #2474a600;
-  width: 52vw;
+
+.home_button {
+
+    width: 300px;
+    cursor: pointer;
+    padding-bottom: 1em;
 
 }
+
 @media only screen and (max-width: 600px) {
-  body{
-    max-width: 100%;
-    margin: 0%;
-    padding: 0%;
-  }
-  main{
-    max-width: 100%;
-    margin: 0%;
-    padding: 0%;
-  }
-  h1{
-    font-size: 25px;
-    padding-bottom: 3px;
-  }
-  .video_description{
-    padding-top: 0em;
-    padding-right: 0%;
-    padding-left: 0%;
+    body {
+        max-width: 100%;
+        margin: 0%;
+        padding: 0%;
     }
-    .navigation_bar{
-      width: 100%;
-      text-align: center;
-      grid-template-columns: auto;
-      left: auto;
+
+    main {
+        max-width: 100%;
+        margin: 0%;
+        padding: 0%;
     }
-    .filler_nav_bar{
-      background-color: #2474a600;
-      width: 100vw;
-    
+
+    h1 {
+        font-size: 25px;
+        padding-bottom: 3px;
     }
+
+    .video_description {
+        padding-top: 0em;
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+
+
+
+    .topnav a,
+    .dropdown .dropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+
+
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+
 }
