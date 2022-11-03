@@ -245,7 +245,11 @@ a:hover{
     border-bottom-color: rgba(208, 64, 0, 0.2);
     text-decoration:none
 }
-
+.maps{
+    margin-right: 1em;
+    margin-bottom: 1em;
+    width: 100%;
+}
 @media only screen and (max-width: 600px) {
     body {
         max-width: 100%;
