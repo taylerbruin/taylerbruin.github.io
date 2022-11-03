@@ -11,23 +11,8 @@ function createheader() {
     <body>
         <input type=image class=home_button src="Logo_Run_2.svg" alt="Home" onclick="location.href='index.html'">
     <div class="topnav" id="myTopnav">
-        <div class="dropdown">
-        <button class="dropbtn">Creative Projects 
-            <i class="fa fa-caret-down"></i>
-          </button>
-          <div class="dropdown-content">
-            <a href="comms_taki.html">Taki</a>
-            <a href="byupromo.html">BYU Promo</a>
-          </div>
-        </div>
-      <div class="dropdown">
-        <button class="dropbtn">Technical Projects 
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="githubprojects.html">githubprojects</a>
-        </div>
-      </div> 
+      <a href="Creative_Projects.html">Creative Projects</a>  
+      <a href="Technical_Projects.html">Coding Projects</a>
       <a href="resume.html">Resume</a>
       <a href="javascript:void(0);" style="font-size:15px;" class="icon" id="icon" onclick="Open_Mobile_Menu()">&#9776;</a>
     </div>
