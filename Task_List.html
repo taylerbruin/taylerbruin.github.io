@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+</head>
+
+<body id="top" onload="readStorage()">
+
+    <script src="basescript.js"></script>
+
+    <br>
+    <input type="checkbox" id="dates" class="toggle-switch" onclick="sortByDate()">
+    <label for="dates">sort by date</label>
+    <input type="checkbox" id="tasks" class="toggle-switch" onclick="sortByDone()">
+    <label for="tasks">filter completed tasks</label>
+    <ul class="tasklist" id = "list">
+  
+    </ul>
+    <form class="form-create-task" onsubmit="createTask(event)">
+        <label for="action">Action Needed:</label>
+        <input type="text" class="form-settings" name="action" id="actionText" placeholder="Enter a task" oninput="saveInputText()" required> <br>
+        <label for="date completed">Date to complete:</label>
+        <input type="date" id="date completed" name="date" oninput="saveInputDate()"><br>
+        <button class="pretty-button">Create Action</button>
+    </form>
+    <!-- Your visible elements -->
+    <script src="Task_List_Script.js"></script>
+    <main>
+
+    </main>
+</body>
+
+</html>
