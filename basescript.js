@@ -11,6 +11,7 @@ function createheader() {
     <body>
         <input type=image class=home_button src="Logo_Run_2.svg" alt="Home" onclick="location.href='index.html'">
     <div class="topnav" id="myTopnav">
+      <a href="index.html">Home</a>  
       <a href="Creative_Projects.html">Creative Projects</a>  
       <a href="Technical_Projects.html">Coding Projects</a>
       <a href="resume.html">Resume</a>
