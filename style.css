@@ -234,10 +234,84 @@ h1 {
 }
 .task{
     list-style: none;
-
-    margin-bottom: 4px;
+    position: relative;
+    padding: 3px;
+    color:#2b2b2b;
+    padding-left: 1em;
+    font-size: 1.2em;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
     width: 90%;
     background-color: #b3b3b3;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 42;
+  display:inline-flex;
+  vertical-align:top;
+  cursor: pointer;
+}
+.linethrough{
+    text-decoration: line-through;
+}
+
+.delete-button{
+    font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 45;
+float: right;
+
+}
+.task-date{
+    float: right;
+    margin-right: 1em;
+}
+.form-settings{
+  width: 90%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  margin-left: 16px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.pretty-button{
+    width: 30%;
+    background-color: #008299;
+    color: white;
+    font-weight: bold;
+}
+.better-date-field{
+    width: 30%;
+}
+.sort-button{
+    width:fit-content;
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    margin: 12px 0;
+    margin-bottom: 0px;
+    margin-left: 2.5em;
+    font-size: 13.33px;
+    vertical-align: middle;
+    font-family: Arial;
+    background-color: #008299;
+    color: white;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.sort-container{
+    display: flex;
+    margin-bottom: 0px;
 }
 .daily-universe{
   display: block;
@@ -246,6 +320,10 @@ h1 {
   margin-right: auto;
   margin-bottom: 1 em;
   padding: 10 em;
+}
+.tasklist{
+    padding: 1em;
+    padding-bottom: 0;
 }
 h4{
     margin: 0em;

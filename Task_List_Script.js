@@ -10,20 +10,20 @@ class Task {
         if (this.done == false) {
             return `
         <li class="task" task-id="${this.id}">
-            <input type="checkbox" class="task-done checkbox-icon" id = "${this.id}" onchange="updateTask(${this.id})">
+            <span class="material-symbols-outlined" id = "${this.id}" onclick="updateTask(this.id)">check_box_outline_blank</span>
             <label class ="task-description" for = "${this.id}" task-id="${this.id}">${this.text}</label>
+            <span class="material-symbols-outlined delete-button" id = "${this.id}" onclick="deleteTask(this.id)">Remove</span>
             <span class ="task-date">${this.prettyDate()}</span>
-            <button class ="task-delete material-icon" onclick="deleteTask(this.id)">remove_circle</button></li>
         </li>
         `
         }
         else {
             return `
         <li class="task" task-id="${this.id}">
-            <input type="checkbox" class="task-done checkbox-icon" id = "${this.id}" onchange="updateTask(this.id)" ${this.done ? 'checked' : 'linethrough'}>
+            <span class="material-symbols-outlined" id = "${this.id}" onclick="updateTask(this.id)">check_box</span>
             <label class ="task-description linethrough" for = "${this.id}" task-id="${this.id}">${this.text}</label>
-            <span class ="task-date">${this.prettyDate()}</span>
-            <button class ="task-delete material-icon" onclick="deleteTask(this.id)">remove_circle</button></li>
+            <span class="material-symbols-outlined delete-button" id = "${this.id}" onclick="deleteTask(this.id)">Remove</span>
+            <span class ="task-date linethrough">${this.prettyDate()}</span>
         </li>
         `
         }
@@ -44,7 +44,6 @@ this.readTask();
 document.getElementById('actionText').value = localStorage.getItem('inputBoxText');
 var date = localStorage.getItem('inputBoxDate');
 document.getElementById('date completed').value = date;
-
 function createTask(event) {
     event.preventDefault()
     // Collects input from the forum and saves it into the Local Storage, then call the readTasks function
@@ -88,7 +87,6 @@ function updateTask(id) {
 }
 
 function deleteTask(id) {
-    console.log("delete task");
     objIndex = tasks.findIndex((obj => obj.id == id));
     tasks.splice(objIndex, 1);
     this.updateStorage(tasks);
@@ -187,14 +185,12 @@ function saveInputText() {
     //console.log('Saving Input Text');
     var saveText = document.getElementById('actionText').value;
     localStorage.setItem('inputBoxText', saveText);
-    console.log('Current Text: ' + localStorage.getItem('inputBoxText'));
     return;
 }
 
 function saveInputDate() {
-    console.log('Saving Input Date');
+    //console.log('Saving Input Date');
     var saveDate = document.getElementById('date completed').value;
     localStorage.setItem('inputBoxDate', saveDate);
-    console.log('Current Date: ' + saveDate);
     return;
 }
