@@ -7,10 +7,10 @@ function createheader() {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     
-    <link rel="stylesheet" href="../Styles/style.css">
+    <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <input type=image class=home_button src="../Media/Logo_Run_2.svg" alt="Home" onclick="location.href='index.html'">
+        <input type=image class=home_button src="Logo_Run_2.svg" alt="Home" onclick="location.href='index.html'">
     <div class="topnav" id="myTopnav">
       <a href="index.html">Home</a>  
       <a href="Creative_Projects.html">News Stories</a>
