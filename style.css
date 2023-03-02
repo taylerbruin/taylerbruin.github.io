@@ -217,7 +217,8 @@ h1 {
 }
 .project-tiles{
     display: grid;
-    grid-template-columns: auto auto;
+    width: 100%;
+    grid-template-columns: auto;
     list-style: none;
     padding-left: 0;
 }
@@ -228,6 +229,7 @@ h1 {
     border-color: rgb(0,32,65, .5);
     margin: 1em;
     padding: 10px;
+    width: auto;
 }
 .class-title{
     margin: 1em;
