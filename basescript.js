@@ -10,14 +10,16 @@ function createheader() {
     <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <input type=image class=home_button src="Logo_Run_2.svg" alt="Home" onclick="location.href='index.html'">
+        
     <div class="topnav" id="myTopnav">
+    <input type=image class=home_button src="Logo_Run_2.svg" alt="Home" onclick="location.href='index.html'">
       <a href="index.html">Home</a>  
       <a href="Creative_Projects.html">News Stories</a> 
       <a href="Technical_Projects.html">Coding Projects</a>
       <a href="resume.html">Resume</a> 
-      <a href="javascript:void(0);" style="font-size:15px;" class="icon" id="icon" onclick="Open_Mobile_Menu()">&#9776;</a>
+      <a href="javascript:void(0);" style="font-size:25px;" class="icon" id="icon" onclick="Open_Mobile_Menu()">&#9776;</a>
     </div>
+    
     
     
     </body>

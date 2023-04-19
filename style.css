@@ -12,7 +12,7 @@ the corresponding fonts from Google Fonts. */
     --primary-text: #ffffff;
     --green: #2474a6af;
     /* Window background and default font */
-    background-image: url("background_image.webp");
+    background-image: url("background_image.png");
     background-repeat: inherit;
     background-position: center;
     font-family: 'Tahoma', 'Verdana', 'Times New Roman', 'Lucida Sans';
@@ -23,11 +23,12 @@ body {
     /* Keeps the page from overflowing on wide monitors */
     margin: 1em auto;
     /* 0.5em is top and bottom margin. 'auto' for left and right centers the body on the page */
-    padding: 0%;
+    height: 100%;
     /* Padding goes between the borders and the internal content */
-    padding-left: 1%;
     padding-top: 1%;
-    background: rgba(0, 0, 0, 0.159);
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 5px;
+    color: white;
     /* Contrast the body background from the page background */
 }
 
@@ -38,11 +39,12 @@ body {
     overflow: hidden;
     height: max-content;
     background-image: linear-gradient(to right, rgba(63, 63, 63, 0.788), rgba(106, 147, 158, 0.575));
+    display: flex;
+    align-items: center;
+
 }
 
 .topnav a {
-    float: left;
-    display: block;
     color: #f2f2f2;
     text-align: center;
     padding: 10px 14px;
@@ -55,7 +57,7 @@ body {
     color: white;
 }
 
-.topnav .icon {
+.icon {
     display: none;
 }
 
@@ -96,7 +98,7 @@ body {
 
 .topnav a:hover,
 .dropdown:hover .dropbtn {
-    background-color: #555;
+
     color: white;
 }
 
@@ -134,7 +136,6 @@ body {
 main {
     height: 100%;
     max-width: 100%;
-    margin: 1%;
     padding: 1rem;
     border-radius: 5px;
 }
@@ -181,7 +182,6 @@ footer {
 
 h1 {
     font-size: 30px;
-    padding-left: 10px;
 }
 
 .download_button {
@@ -192,7 +192,7 @@ h1 {
     border: none;
     margin: 1em;
     margin-left: auto;
-  margin-right: auto;
+    margin-right: auto;
     width: fit-content;
     display: block;
     overflow: hidden;
@@ -202,43 +202,73 @@ h1 {
 
     width: 300px;
     cursor: pointer;
-    padding-bottom: 1em;
-
 }
-.profile-photo{
-    float: left;
+
+.profile-photo {
     margin-right: 1em;
     margin-bottom: 1em;
- 
-    width: 200px;
+
+    width: 100%;
 }
-.center-title{
+
+.center-title {
     text-align: center;
 }
-.project-tiles{
+
+.project-tiles-container {
     display: grid;
-    width: 100%;
-    grid-template-columns: auto;
-    list-style: none;
-    padding-left: 0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin-left: 0px;
+    margin-top: 5px;
 }
-.project-tiles li{
-    background-color: rgb(255,255,255);
-    border-style: solid;
+
+.project-tiles {
+    background-color: rgba(35, 72, 83, 0.8);
+    border: 1px solid rgba(0, 0, 0, 0.336);
+    font-size: 25px;
+    text-align: left;
+    border-radius: 5px;
+    padding-bottom: 10px;
+    margin: .5em;
+}
+
+.project-tiles li {
+    list-style: none;
     border-width: 1px;
-    border-color: rgb(0,32,65, .5);
+    border-color: rgb(0, 32, 65, .5);
     margin: 1em;
     padding: 10px;
-    width: auto;
 }
-.class-title{
+.project-tiles p{
+   font-size: .60em;
+   padding: 20px;
+   padding-bottom: 0;
+   padding-top: 0;
+}
+.project-tiles a{
+    color: white;
+    padding-left: 20px;
+    font-size: medium;
+}
+.project-tiles img{
+    display: flex;
+    align-items: center;
+}
+.project-tiles-title{
+    background-color: #2b2b2bd7;
+    margin: 0;
+    padding: 5px;
+}
+.class-title {
     margin: 1em;
 }
-.task{
+
+.task {
     list-style: none;
     position: relative;
     padding: 3px;
-    color:#2b2b2b;
+    color: #2b2b2b;
     padding-left: 1em;
     font-size: 1.2em;
     margin-bottom: 12px;
@@ -247,54 +277,61 @@ h1 {
     width: 90%;
     background-color: #b3b3b3;
 }
+
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 0,
-  'wght' 200,
-  'GRAD' 0,
-  'opsz' 42;
-  display:inline-flex;
-  vertical-align:top;
-  cursor: pointer;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 200,
+        'GRAD' 0,
+        'opsz' 42;
+    display: inline-flex;
+    vertical-align: top;
+    cursor: pointer;
 }
-.linethrough{
+
+.linethrough {
     text-decoration: line-through;
 }
 
-.delete-button{
+.delete-button {
     font-variation-settings:
-  'FILL' 0,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 45;
-float: right;
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 45;
+    float: right;
 
 }
-.task-date{
+
+.task-date {
     float: right;
     margin-right: 1em;
 }
-.form-settings{
-  width: 90%;
-  padding: 12px 20px;
-  margin: 8px 0;
-  margin-left: 16px;
-  display: inline-block;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  box-sizing: border-box;
+
+.form-settings {
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    margin-left: 16px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
-.pretty-button{
+
+.pretty-button {
     width: 30%;
     background-color: #008299;
     color: white;
     font-weight: bold;
 }
-.better-date-field{
+
+.better-date-field {
     width: 30%;
 }
-.sort-button{
-    width:fit-content;
+
+.sort-button {
+    width: fit-content;
     display: flex;
     align-items: center;
     padding: 5px 10px;
@@ -311,52 +348,61 @@ float: right;
     border-radius: 4px;
     box-sizing: border-box;
 }
-.sort-container{
+
+.sort-container {
     display: flex;
     margin-bottom: 0px;
 }
-.daily-universe{
-  display: block;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1 em;
-  padding: 10 em;
+
+.daily-universe {
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1 em;
+    padding: 10 em;
 }
-.tasklist{
+
+.tasklist {
     padding: 1em;
     padding-bottom: 0;
 }
-h4{
+
+h4 {
     margin: 0em;
     margin-bottom: 1em;
 }
-a{
+
+a {
     color: black;
-    border-bottom: dotted 1px; 
     border-bottom-color: rgba(15, 122, 252, 0.2);
-    text-decoration:none;
+    text-decoration: none;
     font-weight: bold;
 }
-a:hover{
-    color:#081586;
+
+a:hover {
+    color: #868686;
     border-bottom-color: rgba(208, 64, 0, 0.2);
-    text-decoration:none
+    text-decoration: none
 }
-.stories-list{
+
+.stories-list {
     font-weight: normal;
     list-style: none;
     border-style: none;
 }
-.stories-list li{
-    list-style:square;
+
+.stories-list li {
+    list-style: square;
     border-style: none;
     margin: 4px;
 }
-.stories-list a{
+
+.stories-list a {
     font-weight: normal;
 }
-.maps{
+
+.maps {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -364,14 +410,15 @@ a:hover{
     margin-bottom: 1em;
     border-style: solid;
     border-width: 2px;
-    border-color:rgba(0, 0, 0, 0.212);
+    border-color: rgba(0, 0, 0, 0.212);
 }
-@media only screen and (max-width: 600px) {
+
+@media only screen and (max-width: 900px) {
     body {
         max-width: 100%;
         margin: 0%;
         padding: 0%;
-  
+
     }
 
     main {
@@ -391,17 +438,21 @@ a:hover{
         padding-left: 0%;
     }
 
+    .project-tiles-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
 
-
-    .topnav a,
+    .topnav {
+        flex-direction: column;
+    }
+    .topnav a {
+        display: none;
+    }
     .dropdown .dropbtn {
         display: none;
     }
 
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
+    
 
 
 
@@ -409,10 +460,10 @@ a:hover{
         position: relative;
     }
 
-    .topnav.responsive .icon {
+    .topnav .icon {
         position: absolute;
+        display: block;
         right: 0;
-        top: 0;
     }
 
     .topnav.responsive a {
@@ -434,16 +485,19 @@ a:hover{
         width: 100%;
         text-align: left;
     }
-    .profile-photo{
-        display:block;
+
+    .profile-photo {
+        display: block;
         margin-left: auto;
         margin-right: auto;
         float: none;
     }
-.project-tiles{
-    grid-template-columns: auto;
-}
-.maps{
-    width: 100%;
-}
+
+    .project-tiles {
+        grid-template-columns: auto;
+    }
+
+    .maps {
+        width: 100%;
+    }
 }
