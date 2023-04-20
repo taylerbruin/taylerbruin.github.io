@@ -16,7 +16,8 @@ function createheader() {
       <a href="index.html">Home</a>  
       <a href="Creative_Projects.html">News Stories</a> 
       <a href="Technical_Projects.html">Coding Projects</a>
-      <a href="resume.html">Resume</a> 
+      <a href="resume.html">Resume</a>
+      <a href="About_Me.html">About Me</a> 
       <a href="javascript:void(0);" style="font-size:25px;" class="icon" id="icon" onclick="Open_Mobile_Menu()">&#9776;</a>
     </div>
     
