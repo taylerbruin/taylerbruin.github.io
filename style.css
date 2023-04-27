@@ -246,6 +246,9 @@ h1 {
    padding-bottom: 0;
    padding-top: 0;
 }
+.image-link {
+    padding-left: 0 !important;
+}
 .project-tiles a{
     color: white;
     padding-left: 20px;
@@ -255,10 +258,17 @@ h1 {
     display: flex;
     align-items: center;
 }
+
 .project-tiles-title{
     background-color: #2b2b2bd7;
     margin: 0;
     padding: 5px;
+}
+.project-tiles-sub-title{
+    background-color: #2b2b2bd7;
+    margin: 0;
+    padding: 5px;
+    font-size: 20px;
 }
 .class-title {
     margin: 1em;
