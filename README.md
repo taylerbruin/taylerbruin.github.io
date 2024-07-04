@@ -1,2 +1,0 @@
-# Tayler_Bruin_Portfolio
-This is a portfolio project to showcase a combination of my creative and technical work. Everything in this project was built using pure HTML, CSS, and JavaScript to showcase my understanding of web development fundamentals. I currently work as a web developer for the  International Center for Law and Religion Studies (iclrs.org). My projects there have primarily involved maintaining and building WordPress sites with bedrock, with some work on Laravel sites and setup and development of Lando and its accompanying documentation for future developers.
