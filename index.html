@@ -1,91 +1,345 @@
-<!DOCTYPE html>
-
-<html lang="en">
-<title>Home</title>
-
-<body id="top">
-    <script src="basescript.js"></script>
-    <main>
-        <h1 style="text-align: center">Showcase Projects</h1>
-        <div class="project-tiles-container">
-            <div class="project-tiles">
-                <h1 class="project-tiles-title"> Dignity for Everyone</h1>
-                <a class="image-link" target="_blank" rel="noopener noreferrer"
-                    href="https://www.dignityforeveryone.org/">
-                    <img class="profile-photo" src="Dignity_for_Everyone_Screen_Shot.png">
-                </a>
-                <h1 class="project-tiles-sub-title">Summary</h1>
-                <p>In this project was tasked with rebuilding an existing website from scratch. To ensure
-                    success, I collaborated closely with stakeholders to establish clear requirements and objectives. In
-                    my capacity as project lead, I was responsible for overseeing all aspects of development work from
-                    start to finish.
-                </p>
-                <h1 class="project-tiles-sub-title">Project Challenges</h1>
-                <p>
-                    In this project there was a somewhat difficult task to create a form to allow for individuals to
-                    become signatories, as well as a corresponding page to display the names of those who had completed
-                    the form. This task was made more complex by a requirement that all names displayed on the page had
-                    to be
-                    approved by a non-technical group prior to publication. To achieve this, I leveraged my expertise
-                    with Gravity Forms API to streamline the approval process down to a single click.
-                </p>
-                <h1 class="project-tiles-sub-title">Technologies Used</h1>
-                <p>PHP, HTML, CSS, JavaScript, WordPress, Composer, GitHub, NGINX, CloudFlare,
-                    Gravity Forms </p>
-                <h1 class="project-tiles-sub-title">Explore the Live Site</h1>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.dignityforeveryone.org/"> Dignity for Everyone</a>
-            </div>
-            <div class="project-tiles">
-                <h1 class="project-tiles-title"> ICLRS</h1>
-                <a class="image-link" target="_blank" rel="noopener noreferrer" href="https://www.iclrs.org/">
-                    <img class="profile-photo" src="ICLRS_Screen_Shot.png">
-                </a>
-                <h1 class="project-tiles-sub-title">Summary</h1>
-                <p>As part of my primary responsibilities, I have been tasked with maintaining the iclrs.org site, which
-                    involves content updates and the creation of custom pages for various events. Notable work I have
-                    undertaken includes the creation of custom pages, which involved writing custom HTML, CSS and
-                    JavaScript to
-                    achieve different appearances and layouts, depending on the specific requirements of the page.</p>
-                <p>My work has also encompassed the development of some basic CSS in-page, to ensure that YouTube videos
-                    are displayed correctly and are responsive to different screen sizes. In addition, I have created
-                    user-friendly layouts for various events, which provide attendees with easy-to-use schedules to
-                    reference. As part of my role, I have also undertaken significant image editing work to ensure that
-                    all content displays correctly, even when images are provided in the wrong format or size.
-                </p>
-                <h1 class="project-tiles-sub-title">Technologies Used</h1>
-                <p>PHP, HTML, CSS, JavaScript, WordPress, Composer, GitHub, NGINX, CloudFlare,
-                    Gravity Forms </p>
-                    <h1 class="project-tiles-sub-title">Explore the Live Site</h1>
-                <a target="_blank" rel="noopener noreferrer" href="https://www.iclrs.org/">
-                    iclrs.org</a>
-            </div>
-            <div class="project-tiles">
-                <h1 class="project-tiles-title"> REST API and Unit Tests </h1>
-                <p>
-                    This IT210 Web development class project was divided into two parts, each aimed at demonstrating
-                    proficiency in different aspects of software development.</p>
-                <p>The first part involved the creation of software using Python to test an existing REST API. This unit
-                    testing approach ensured that the responses received from the API aligned with our expectations.
-                    Through this, I showcased my understanding and implementation of unit testing techniques.
-                </p>
-                <p>
-                    For the second part of the project, I was tasked with recreating the REST API using Node.js.
-                    This involved the use of technologies such as Shell, Mongo DB, and REST to develop a functional API.
-                    This allowed me to utilize the previously created Python tester to verify that my Node.js
-                    API was functioning as expected.
-                </p>
-                <h1 class="project-tiles-sub-title">Technologies Used</h1>
-                <p>Node.js, Shell, Python, Mongo DB, REST </p>
-                <h1 class="project-tiles-sub-title">Explore the code for these projects on GitHub</h1>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/taylebruin/API_Tester/"> Part
-                    one API tester</a> <br>
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/taylebruin/REST_API_Node_JS">
-                    Part two Node.js API</a>
-            </div>
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Tayler Bruin Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+      html {
+  scroll-padding-top: 5rem;
+}
+    </style>
+  </head>
+  <body id="bodyTop" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary mb-3 sticky-top">
+      <div class="container">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="#bodyTop">
+            <h1 class="fs-3">Tayler Bruin</h1>
+          </a>
         </div>
-
-    </main>
-</body>
-
-
+    
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <a class="nav-link m-2" onclick="closeNavbar()" href="#RCWilleyProjects">RC Willey</a>
+          <a class="nav-link m-2" href="#ICLRSProjects">ICLRS</a>
+          <a class="nav-link m-2" href="#StudentProjects">School</a>
+        </div>
+      </div>
+    </nav>
+    
+    <div id="aboutMe" class="container">
+      <div class="card mb-3">
+        <div class="row g-0 justify-content-center justify-content-md-start">
+          <div class="col-12 w-auto justify-content-md-start">
+            <img src="Tayler_Bruin_Photo.webp" class="img-fluid rounded-start" alt="Photo of Tayler Bruin" loading="lazy">
+          </div>
+          <div class="col-md-8 col-12">
+            <div class="card-body">
+              <h2 class="card-title fs-4">About Me</h2>
+              <p class="card-text">I am a Frontend Software Engineer at RC Willey, actively pursuing roles that offer increased responsibility. In the past year, I've spearheaded major projects, such as the complete redesign of our new Navigation system, integration of the Shoptelligence Complete the Room feature, overhaul of the Checkout process, implementation of a redesign of the Search Results page, and the migration of over 80 pages to Bootstrap. I played a key role in the successful creation and launch of the new RC Willey Mobile App, which now boasts over 4,000 users. I've also contributed to numerous bug fixes and diverse projects across our platform. Additionally, I have significantly contributed to training and partially overseeing two new developers, enhancing our team's capabilities.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="RCWilleyProjects" class="container mb-3">
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="card-title">
+            <h2>RC Willey</h2>
+            <hr>
+          </div>
+          <p>Discover some of the major projects I have spearheaded at RC Willey that showcase my skills in software development using Java and Bootstrap.</p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-2 g-md-3 align-content-center">
+        <!-- Menu Project -->
+        <div class="col">
+          <div class="card h-100">
+            <a target="_blank" class="d-flex justify-content-center">
+              <img src="NewMenu.webp"  alt="New Menu Example" loading="lazy" style="height: 200px;">
+            </a>
+            <div class="card-body d-flex flex-wrap align-content-start">
+              <h3 class="card-title fs-5">Navigation</h3>
+              <p class="card-text">Implemented a comprehensive redesign and managed the conversion of our entire site template, encompassing the header, footer, and menu. The menu now utilizes Ajax and JSON calls, integrating Bootstrap's offcanvas tools to enhance accessibility significantly.</p>
+              <a target="_blank" class="link link-body-emphasis disabled">Not yet live on rcwilley.com</a>
+            </div>
+            <div class="card-footer">
+              <div class="col-12">
+                Technologies Used:
+              </div>
+              <span class="badge text-bg-light">Java</span>
+              <span class="badge text-bg-light">JSTL</span>
+              <span class="badge text-bg-light">JavaScript/Jquery</span>
+              <span class="badge text-bg-light">HTML/CSS</span>
+              <span class="badge text-bg-light">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        <!-- App Project -->
+        <div class="col">
+          <div class="card h-100">
+            <a target="_blank" class="d-flex justify-content-center" href="https://apps.apple.com/us/app/rc-willey/id6473602302">
+              <img src="RCWilleyApp.webp" alt="RC Willey App Example" loading="lazy" style="height: 200px;">
+            </a>
+            <div class="card-body d-flex flex-wrap align-content-start">
+              <h3 class="card-title fs-5">RC Willey App</h3>
+              <p class="card-text">Took a lead role in developing the new RC Willey App using EXPO, stepping into a senior-level task. Introduced unique functionalities such as a barcode scanner for RC Willey products and direct links to their respective pages. Combined, the apps now serve over 4,000 users.</p>
+              <a target="_blank" href="https://play.google.com/store/apps/details?id=com.rcwilley.rcwilleyappexpo&pcampaignid=web_share" class="link link-body-emphasis my-2 p-2 border rounded col-12 d-flex justify-content-between">Download Android App <i class="bi bi-chevron-right"></i></a>
+              <a target="_blank" href="https://apps.apple.com/us/app/rc-willey/id6473602302" class="link link-body-emphasis border col-12 rounded my-2 p-2 d-flex justify-content-between">Download IOS App <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="card-footer">
+              <div class="col-12">
+                Technologies Used:
+              </div>
+              <span class="badge text-bg-light">EXPO</span>
+              <span class="badge text-bg-light">React Native</span>
+              <span class="badge text-bg-light">Java</span>
+              <span class="badge text-bg-light">JSTL</span>
+              <span class="badge text-bg-light">JavaScript/Jquery</span>
+              <span class="badge text-bg-light">HTML/CSS</span>
+              <span class="badge text-bg-light">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        <!-- Complete the Room Project -->
+        <div class="col">
+          <div class="card h-100">
+            <a target="_blank" class="d-flex justify-content-center" href="https://www.rcwilley.com/Furniture/Sectionals/112783708/Laguna-Off-White-Sofa-Chaise-View" style="height: 200px;">
+              <img src="Shoptelligence.webp" class="card-img-top img-fluid" alt="Shoptelligence Example" loading="lazy" style="height: 200px;">
+            </a>
+            <div class="card-body">
+              <h3 class="card-title fs-5">Complete The Room</h3>
+              <p class="card-text">Led the integration of the Shoptelligence API, ensuring robust security measures and creating a dynamic product recommendation tree that enhanced user engagement. Developed a seamless interface across all product detail pages, significantly improving user product recommendation experience.</p>
+              <a target="_blank" href="https://www.rcwilley.com/Furniture/Sectionals/112783708/Laguna-Off-White-Sofa-Chaise-View" class="link link-body-emphasis">See Example <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="card-footer">
+              <div class="col-12">
+                Technologies Used:
+              </div>
+              <span class="badge text-bg-light">Shoptelligence API</span>
+              <span class="badge text-bg-light">Java</span>
+              <span class="badge text-bg-light">JSTL</span>
+              <span class="badge text-bg-light">JavaScript/Jquery</span>
+              <span class="badge text-bg-light">HTML/CSS</span>
+              <span class="badge text-bg-light">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        <!-- Checkout Project -->
+        <div class="col">
+          <div class="card h-100">
+            <a target="_blank" class="d-flex justify-content-center" href="https://www.rcwilley.com/">
+              <img src="checkout.webp" alt="New Menu Example" loading="lazy" style="height: 200px;">
+            </a>
+            <div class="card-body d-flex flex-wrap align-content-start">
+              <h3 class="card-title fs-5">Checkout</h3>
+              <p class="card-text">Implemented the frontend redesign of our previous multistep checkout process to a new single-page process. Collaborated closely with our web architect to navigate the complexities of this project.</p>
+              <a target="_blank" href="https://www.rcwilley.com/" class="link link-body-emphasis">Try it on RC Willey (I am not trying to sell you anything besides myself) <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="card-footer">
+              <div class="col-12">
+                Technologies Used:
+              </div>
+              <span class="badge text-bg-light">Java</span>
+              <span class="badge text-bg-light">JSTL</span>
+              <span class="badge text-bg-light">JavaScript/Jquery</span>
+              <span class="badge text-bg-light">HTML/CSS</span>
+              <span class="badge text-bg-light">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        <!-- Accessibility Project -->
+        <div class="col">
+          <div class="card h-100">
+            <a target="_blank" class="d-flex justify-content-center" href="https://www.rcwilley.com/">
+              <img src="Accesiblity.webp" class="card-img-top img-fluid" alt="Wave Tool Example" loading="lazy" style="height: 200px;">
+            </a>
+            <div class="card-body d-flex flex-wrap align-content-start">
+              <h5 class="card-title">Accessibility</h5>
+              <p class="card-text">Web accessibility lead for RC Willey, implementing hundreds of changes to rcwilley.com to improve accessibility for our users including converting over 80 pages of our site to the Bootstrap framework and converting several of our JSTL tags to comply with AA accessibility.</p>
+              <a target="_blank" href="https://www.rcwilley.com/" class="link link-body-emphasis">See Example <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="card-footer">
+              <div class="col-12">
+                Technologies Used:
+              </div>
+              <span class="badge text-bg-light">Java</span>
+              <span class="badge text-bg-light">JSTL</span>
+              <span class="badge text-bg-light">JavaScript/Jquery</span>
+              <span class="badge text-bg-light">HTML/CSS</span>
+              <span class="badge text-bg-light">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        <!-- Product Results Project -->
+        <div class="col">
+          <div class="card h-100">
+            <a target="_blank" class="d-flex justify-content-center" href="https://www.rcwilley.com/Furniture/Sofas/Search">
+              <img src="ProductResults.webp" class="card-img-top img-fluid" alt="Shoptelligence Example" loading="lazy" style="height: 200px;">
+            </a>
+            <div class="card-body d-flex flex-wrap align-content-start">
+              <h3 class="card-title fs-5">Search Results</h3>
+              <p class="card-text">Implemented a comprehensive redesign and spearheaded the conversion of our Product Results pages to Bootstrap. Introduced new features including displaying related tags, and repositioning filters into an offcanvas menu to optimize product visibility.</p>
+              <a target="_blank" href="https://www.rcwilley.com/Furniture/Sofas/Search" class="link link-body-emphasis">See Example <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="card-footer">
+              <div class="col-12">
+                Technologies Used:
+              </div>
+              <span class="badge text-bg-light">Java</span>
+              <span class="badge text-bg-light">JSTL</span>
+              <span class="badge text-bg-light">JavaScript/Jquery</span>
+              <span class="badge text-bg-light">HTML/CSS</span>
+              <span class="badge text-bg-light">Bootstrap</span>
+            </div>
+          </div>
+        </div>
+        
+      
+      </div>
+    </div>
+    <!-- ICLRS Projects -->
+    <div id="ICLRSProjects" class="container mb-3">
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="card-title">
+            <h2>International Center for Law and Religion Studies</h2>
+            <hr>
+          </div>
+          <p>Discover some of the major projects I led at the ICLRS that showcase my skills in software development using PHP and WordPress.</p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-2 g-md-3 align-content-center">
+        <!-- Dignity for Everyone Room Project -->
+        <div class="col">
+          <div class="card h-100">
+            <a target="_blank" class="d-flex justify-content-center" href="https://www.dignityforeveryone.org/" style="height: 200px;">
+              <img src="Dignity_for_Everyone_Screen_Shot.webp" class="card-img-top img-fluid" alt="Dignity for Everyone Screen Shot Example" loading="lazy" style="height: 200px;">
+            </a>
+            <div class="card-body">
+              <h3 class="card-title fs-5">Dignity for Everyone</h3>
+              <p class="card-text">Led the complete rebuild of Dignity for Everyone from the ground up. Collaborated closely with stakeholders to define clear requirements and objectives. As project lead, I oversaw all development aspects, including the implementation of data-driven elements on the site.</p>
+              <a target="_blank" href="https://www.dignityforeveryone.org/" class="link link-body-emphasis">See Example <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="card-footer">
+              <div class="col-12">
+                Technologies Used:
+              </div>
+              <span class="badge text-bg-light">WordPress</span>
+              <span class="badge text-bg-light">PHP</span>
+              <span class="badge text-bg-light">JavaScript</span>
+              <span class="badge text-bg-light">HTML/CSS</span>
+              <span class="badge text-bg-light">Composer</span>
+              <span class="badge text-bg-light">GitHub</span>
+              <span class="badge text-bg-light">NGINX</span>
+              <span class="badge text-bg-light">CloudFlare</span>
+              <span class="badge text-bg-light">Gravity Forms</span>
+            </div>
+          </div>
+        </div>
+        <!-- ICLRS Project -->
+        <div class="col">
+          <div class="card h-100">
+            <a target="_blank" class="d-flex justify-content-center" href="https://www.iclrs.org/">
+              <img src="ICLRS_Screen_Shot.webp" class="card-img-top img-fluid" alt="ICLRS screenshot" loading="lazy" style="height: 200px;">
+            </a>
+            <div class="card-body d-flex flex-wrap align-content-start">
+              <h3 class="card-title fs-5">ICLRS</h3>
+              <p class="card-text">Managed day-to-day maintenance and updates for ICLRS.org, including the creation of numerous event pages. Developed custom HTML, CSS, and JavaScript to enhance functionality and user experience across the site.</p>
+              <a target="_blank" href="https://www.iclrs.org/" class="link link-body-emphasis">See Example <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="card-footer">
+              <div class="col-12">
+                Technologies Used:
+              </div>
+              <span class="badge text-bg-light">WordPress</span>
+              <span class="badge text-bg-light">PHP</span>
+              <span class="badge text-bg-light">JavaScript</span>
+              <span class="badge text-bg-light">HTML/CSS</span>
+              <span class="badge text-bg-light">Composer</span>
+              <span class="badge text-bg-light">GitHub</span>
+              <span class="badge text-bg-light">NGINX</span>
+              <span class="badge text-bg-light">CloudFlare</span>
+              <span class="badge text-bg-light">Gravity Forms</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Student Projects -->
+    <div id="StudentProjects" class="container mb-3">
+      <div class="card mb-3">
+        <div class="card-body">
+          <div class="card-title">
+            <h2>Brigham Young University Student Projects</h2>
+            <hr>
+          </div>
+          <p>Discover some of the major projects I engaged in during my time as a student at BYU</p>
+        </div>
+      </div>
+      <div class="row row-cols-1 row-cols-md-1 g-2 g-md-3 align-content-center">
+        <div class="col">
+          <div class="card h-100">
+            <div class="card-body">
+              <h3 class="card-title fs-5">Student Projects</h3>
+              <p class="card-text">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item"><a target="_blank" class="link link-body-emphasis" href="https://github.com/taylerbruin/REST_API_Node_JS">REST API Node JS</a></li>
+                      <li class="list-group-item"><a target="_blank" class="link link-body-emphasis" href="https://github.com/taylerbruin/API_Tester">API Tester Python</a></li>
+                      <li class="list-group-item"><a target="_blank" class="link link-body-emphasis" href="https://github.com/taylerbruin/Azure_Task_List">Azure Task List</a></li>
+                      <li class="list-group-item"><a target="_blank" class="link link-body-emphasis" href="https://github.com/taylerbruin/Basic-PHP-Website">PHP Task List</a></li>
+                      <li class="list-group-item"><a target="_blank" class="link link-body-emphasis" href="https://github.com/taylerbruin/Basic-JavaScript-Website">Javascript Task List</a></li>
+                      <li class="list-group-item"><a target="_blank" class="link link-body-emphasis" href="https://github.com/taylerbruin/LexicalAnalizer">Lexical Analyzer C++ (incomplete)</a></li>
+                    </ul>
+              </p>
+              <a target="_blank" href="https://github.com/taylerbruin" class="link link-body-emphasis">See GitHub Profile for complete list <i class="bi bi-chevron-right"></i></a>
+            </div>
+            <div class="card-footer">
+              <div class="col-12">
+                Technologies Used:
+              </div>
+              <span class="badge text-bg-light">JavaScript/Jquery</span>
+              <span class="badge text-bg-light">HTML/CSS</span>
+              <span class="badge text-bg-light">PHP</span>
+              <span class="badge text-bg-light">C++</span>
+              <span class="badge text-bg-light">AWS</span>
+              <span class="badge text-bg-light">Mongo DB</span>
+              <span class="badge text-bg-light">Node.js</span>
+              <span class="badge text-bg-light">Python</span>
+              <span class="badge text-bg-light">Azure</span>
+              <span class="badge text-bg-light">C#</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    </div>
+    </div>
+  </body>
 </html>
+<!-- Maybe add comprehenisve skills section -->
+<script>
+  // Get all navigation links
+const navLinks = document.querySelectorAll('.nav-link');
+
+// Add click event listener to each link
+navLinks.forEach(link => {
+ link.addEventListener('click', () => {
+   // Check if the navbar is open
+   const navbar = document.querySelector('.navbar-collapse');
+   if (navbar.classList.contains('show')) {
+     // Collapse the navbar
+     navbar.classList.remove('show');
+   }
+ });
+});
+</script>
